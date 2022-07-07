@@ -1,0 +1,14 @@
+spring:
+  task:
+    scheduling:
+      pool:
+        size: 5
+    execution:
+      shutdown:
+        await-termination: false
+        await-termination-period: 10s
+  jdbc:
+    template:
+      fetch-size: -1
+      max-rows: 5000
+      query-timeout: -1

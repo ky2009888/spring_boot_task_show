@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.task.show.apps.mapper.ApHotWordsMapper">
+
+    <resultMap id="BaseResultMap" type="com.task.show.apps.domain.ApHotWords">
+            <id property="id" column="id" jdbcType="OTHER"/>
+            <result property="hotWords" column="hot_words" jdbcType="VARCHAR"/>
+            <result property="type" column="type" jdbcType="TINYINT"/>
+            <result property="hotDate" column="hot_date" jdbcType="VARCHAR"/>
+            <result property="createdTime" column="created_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,hot_words,type,
+        hot_date,created_time
+    </sql>
+</mapper>
